@@ -1,74 +1,3 @@
-/* Збросити css стилі */
-
-/* Указываем box sizing */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* Убираем внутренние отступы */
-ul[class],
-ol[class] {
-  padding: 0;
-}
-
-/* Убираем внешние отступы */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-ul[class],
-ol[class],
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
-  margin: 0;
-}
-
-/* Выставляем основные настройки по-умолчанию для body */
-body {
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-}
-
-/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
-ul[class],
-ol[class] {
-  list-style: none;
-}
-
-/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
-
-/* Упрощаем работу с изображениями */
-img {
-  max-width: 100%;
-  display: block;
-}
-
-/* Указываем понятную периодичность в потоке данных у article*/
-article > * + * {
-  margin-top: 1em;
-}
-
-/* Наследуем шрифты для инпутов и кнопок */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
 /* All page styles */
 body {
     font-family: 'PT Sans', sans-serif;
@@ -201,7 +130,7 @@ header {
 
 #main__content {
   height: 1385px;
-  background-image: url(img/185.jpg);
+  background-image: url(../img/background_main.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -253,11 +182,15 @@ header {
   height: 100%;
 }
 
-#goods__grid {
-  display: grid;
+.goods__grid {
+  display: none;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 15px;
   row-gap: 20px;
+}
+
+#main__content__inner__aside__right > .goods__grid:first-child {
+  display: grid;
 }
 
 .good__wrapper {
@@ -326,32 +259,6 @@ header {
   font-size: 30px;
   font-weight: bold;
   color: #74fbe1;
-}
-
-/* Pagination */
-#goods__pagination {
-  margin-top: 30px;
-  color: #3f4c66;
-  font-size: 18px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-#goods__pagination > p {
-  color: black;
-  padding: 8px 16px;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-#goods__pagination > p:active {
-  background-color: #5D74A2;
-  color: white;
-}
-
-#goods__pagination p:hover:not(.active) {
-  background-color: #b1dff0
 }
 
 /* About goods */

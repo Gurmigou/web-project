@@ -10,8 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans&family=Secular+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/slider.css">
+    <link rel="stylesheet" href="styles/pagination.css">
     <script src="https://kit.fontawesome.com/e990452c07.js" crossorigin="anonymous"></script>
     <title>Fruit bouquet shop</title>
 </head>
@@ -128,11 +130,12 @@
                     </div>
                 </div>
                 <div id="main__content__inner__aside__right">
-                    <div id="goods__grid">
+                    <div class="goods__grid">
                         <div class="good__wrapper">
                             <div class="good__wrapper__inner">
                                 <div class="good__image__wrapper">
-                                    <img src="https://lh3.googleusercontent.com/3B9u7oyHB1r5laiijEpozNq9LiZUypUt-hYudOCilbzicuHZSUtj26iVxJNY1wjUS9BYz2oxEtewVSWe_fAzzv56ULJrv-2J2cmDbJ5sA3Fo0i229emm9tQgU7utjpl_ouUhXli-ZKKmRoCleqZ4zPZnC5OkiIedDrD4vYFTYXF3zEZCo_GXzF3faxoJ_ptV1MqxCZ-gWV8Zq21gG8zl8q6fz2W5aRN8udjG3e4RIvKGEoUaRBYRj7t_wBqg9qByYIFME0TuvPfKsuQWeGb63_IuCaM7HlnddOjfUtRaZB0gfFo8AkAvmUTRXBC5c_RB2Ty92NOzD6spOrPkXHnKnZ2JCaSsxEHh646hOniGAle7szgD_xMlnO8q9UOXhl9L2izIfT_rR8tHR4ezegKVHMHqQSIsSBWtCkAcmVWt8Zln66WhPI0xvkgJn5pMjemlQTBkPCxF6yvbANXsptV_3nD2EGBwbCmDxcjTgLnE7f2ssHRmQgtYVv09P4igTM0JYh0bhw2IUWs5d9OeHcWOJq5ry4_gt7JlEANcQkRhVxLo9uBJrUbE5Boi0XyotvK47MAcZTM406oYldkVk4P-acbvnUw-ZirlBcxvzpfyvFHc2jK4VTOV0xBdaj8OP-m_UTdTcYPp_P9JqCAaNiuE1NjEJlLXMVUQamGbC3B2ZfBjfSX0oGySTo7QXBeMQkAPgTkHSmb764t5hCXaMiT9Qv9h_fl8lAR7XPKDGL_IkvRmZmZ4rJ6O1cZ7VmMaXzEa6RuLujQOw8n5gLYrjclGQfWAANxpcblSVg=w750-h843-no?authuser=0" alt="image">
+                                    <img src="img/b1.jpg" alt="img">
+                                    <!-- <img src="https://lh3.googleusercontent.com/3B9u7oyHB1r5laiijEpozNq9LiZUypUt-hYudOCilbzicuHZSUtj26iVxJNY1wjUS9BYz2oxEtewVSWe_fAzzv56ULJrv-2J2cmDbJ5sA3Fo0i229emm9tQgU7utjpl_ouUhXli-ZKKmRoCleqZ4zPZnC5OkiIedDrD4vYFTYXF3zEZCo_GXzF3faxoJ_ptV1MqxCZ-gWV8Zq21gG8zl8q6fz2W5aRN8udjG3e4RIvKGEoUaRBYRj7t_wBqg9qByYIFME0TuvPfKsuQWeGb63_IuCaM7HlnddOjfUtRaZB0gfFo8AkAvmUTRXBC5c_RB2Ty92NOzD6spOrPkXHnKnZ2JCaSsxEHh646hOniGAle7szgD_xMlnO8q9UOXhl9L2izIfT_rR8tHR4ezegKVHMHqQSIsSBWtCkAcmVWt8Zln66WhPI0xvkgJn5pMjemlQTBkPCxF6yvbANXsptV_3nD2EGBwbCmDxcjTgLnE7f2ssHRmQgtYVv09P4igTM0JYh0bhw2IUWs5d9OeHcWOJq5ry4_gt7JlEANcQkRhVxLo9uBJrUbE5Boi0XyotvK47MAcZTM406oYldkVk4P-acbvnUw-ZirlBcxvzpfyvFHc2jK4VTOV0xBdaj8OP-m_UTdTcYPp_P9JqCAaNiuE1NjEJlLXMVUQamGbC3B2ZfBjfSX0oGySTo7QXBeMQkAPgTkHSmb764t5hCXaMiT9Qv9h_fl8lAR7XPKDGL_IkvRmZmZ4rJ6O1cZ7VmMaXzEa6RuLujQOw8n5gLYrjclGQfWAANxpcblSVg=w750-h843-no?authuser=0" alt="image"> -->
                                 </div>
                                 <div class="good__info__wrapper">
                                     <div class="good__description__wrapper">
@@ -147,7 +150,8 @@
                         <div class="good__wrapper">
                             <div class="good__wrapper__inner">
                                 <div class="good__image__wrapper">
-                                    <img src="https://lh3.googleusercontent.com/x4o-x8BDnDvg2HnyqBudT0H1JSGaoo3GIdZ7iFThyqzLV83bQDu5utPhujWDTjbtwG3q6nlXKrVBo_A5yBejsD4ct1OAmq4cQ_5sXU1zE2A4UU9s3eJxzCaLqX8GbjKN-xqr_ccGkLdMg2Iq9Zhdjko9ay0fQbtR7RxcXGVbaVwTde8emv8aF_XNRonLOw5vh_zWoBwZCCXoRPM1Hv9GjL286MvPVR6lkaQFXuVsIyo71hbVo56YqtsHPySFVBW6cS2Im6FhOhruMjjsbHoK11rCMzTwDXW7CLoahprtoc0Tw1OcQk0UGwUT57G044TansYEbuLTdoity48yfPTBgjCbWo4FWK1GEihv3Z6Bqro8uqXSJcJIFICVO6qid9ZqAbstrRWuqFJKTim_dRep0VWZMDuo4_ZW6l9-oFlBXmsq3Ia_meOZmsw94VbnRNwPv0xAYitwRIy9LEyUvrb51kqnm61DCoPnJpb4Udhoe50ZwowgyYSTjBayD2NGK2kKNteSd3s01THtzXwyeOv473zOqlWYk2vpFWD1UapYnggKKYdxlcfOT3axhQh14MZyountSG_BOAgIaiEMcWln4JdQpU6XhxmJbuhEM27GRWHuW8qDoEO_llfhVmCeXdy2BB2YmzEFULon4Qx5ACsQyihwXWSmFzYoxOti4x_kdsF255adFlDxdQT8RwwMkRZ_Bj6pPJ3801FbsgUj2czpQOKvZdvCXIDdSJWRXDtXye9D8kVO3xdrx6_-q3RDKpemS9Cb8cHN0uui8LVyf2hNoSXUQCVph5JeTA=w640-h728-no?authuser=0" alt="image">
+                                    <img src="img/b2.jpg" alt="img">
+                                    <!-- <img src="https://lh3.googleusercontent.com/x4o-x8BDnDvg2HnyqBudT0H1JSGaoo3GIdZ7iFThyqzLV83bQDu5utPhujWDTjbtwG3q6nlXKrVBo_A5yBejsD4ct1OAmq4cQ_5sXU1zE2A4UU9s3eJxzCaLqX8GbjKN-xqr_ccGkLdMg2Iq9Zhdjko9ay0fQbtR7RxcXGVbaVwTde8emv8aF_XNRonLOw5vh_zWoBwZCCXoRPM1Hv9GjL286MvPVR6lkaQFXuVsIyo71hbVo56YqtsHPySFVBW6cS2Im6FhOhruMjjsbHoK11rCMzTwDXW7CLoahprtoc0Tw1OcQk0UGwUT57G044TansYEbuLTdoity48yfPTBgjCbWo4FWK1GEihv3Z6Bqro8uqXSJcJIFICVO6qid9ZqAbstrRWuqFJKTim_dRep0VWZMDuo4_ZW6l9-oFlBXmsq3Ia_meOZmsw94VbnRNwPv0xAYitwRIy9LEyUvrb51kqnm61DCoPnJpb4Udhoe50ZwowgyYSTjBayD2NGK2kKNteSd3s01THtzXwyeOv473zOqlWYk2vpFWD1UapYnggKKYdxlcfOT3axhQh14MZyountSG_BOAgIaiEMcWln4JdQpU6XhxmJbuhEM27GRWHuW8qDoEO_llfhVmCeXdy2BB2YmzEFULon4Qx5ACsQyihwXWSmFzYoxOti4x_kdsF255adFlDxdQT8RwwMkRZ_Bj6pPJ3801FbsgUj2czpQOKvZdvCXIDdSJWRXDtXye9D8kVO3xdrx6_-q3RDKpemS9Cb8cHN0uui8LVyf2hNoSXUQCVph5JeTA=w640-h728-no?authuser=0" alt="image"> -->
                                 </div>
                                 <div class="good__info__wrapper">
                                     <div class="good__description__wrapper">
@@ -162,7 +166,8 @@
                         <div class="good__wrapper">
                             <div class="good__wrapper__inner">
                                 <div class="good__image__wrapper">
-                                    <img src="https://lh3.googleusercontent.com/_3XhMl2KAvUPFVORxAzAHSFrcqSrS-4vVUnixvoyO6Erc9AA-SqthlKsRpyHID44fxWjnW6MmKGWi0tRTd0K3v0jGS_m7w513LS1Scw-eRn1U4pNLUgLNbCrHO9zzRgcNCR1F98T6dC9-IdzfqLPeUvXQIqrHAVPWZgfkR7Hq_ILhscIjKgOWQ1U2bsWCmSA6a3Ptt6Pt28NkbjLE-bkIK9Oup9HttDbpORN7a9p2sdU1_5zCC-PLP1i64BwHt-Rjq8iR5CzmK9ze9UHK1jHqRQHBDyCnCtiIWrjLCftrCPPR1JKRyEaLDowpt9sQzFZYu46Bve4WW50L69Rqz9gdMoDG3VkplhMmgb5zSGoQ3L3MbefZmssgIxirudqaYF_XcmW3EbOFdHdQpvKVv-ddVpoOFTj3sU7V9t0hGYtrE2E0_hDtQsLvSDAAnmYTECtlh6I8Hxyhz_y9Mp-OYaT89qZzlFAixSHf_S6IUTI8ckXxoRnZjLVo6ioZCO3DXnuiYYjHj6-XyQmRQcoGqlmwLhLvsubdutpVdsFM26OyUe8BM213CpcpH73fo4BU0MgjYG4p-2emr2JFnlX7D5LOi9oZtt5CAU4bDeeaAqYmz3EiAh904FiqjGIo2Su71cZfyBvhM9BpIGsM8-BjEzNAoAZ4WpvmwZYTb0o-h25wiPs4hSc0BOPGD1H860Gfoz76kOTuq9Ud-CjHG_3aD_LJJXuRQTexsVppkAedyN4rVxwFT2vC7EPzAOCrlnpX_oZXfejLr1XAZoaK4pt0Avb22BTNkc4GeVjaw=w640-h727-no?authuser=0" alt="image">
+                                    <img src="img/b3.jpg" alt="img">
+                                    <!-- <img src="https://lh3.googleusercontent.com/_3XhMl2KAvUPFVORxAzAHSFrcqSrS-4vVUnixvoyO6Erc9AA-SqthlKsRpyHID44fxWjnW6MmKGWi0tRTd0K3v0jGS_m7w513LS1Scw-eRn1U4pNLUgLNbCrHO9zzRgcNCR1F98T6dC9-IdzfqLPeUvXQIqrHAVPWZgfkR7Hq_ILhscIjKgOWQ1U2bsWCmSA6a3Ptt6Pt28NkbjLE-bkIK9Oup9HttDbpORN7a9p2sdU1_5zCC-PLP1i64BwHt-Rjq8iR5CzmK9ze9UHK1jHqRQHBDyCnCtiIWrjLCftrCPPR1JKRyEaLDowpt9sQzFZYu46Bve4WW50L69Rqz9gdMoDG3VkplhMmgb5zSGoQ3L3MbefZmssgIxirudqaYF_XcmW3EbOFdHdQpvKVv-ddVpoOFTj3sU7V9t0hGYtrE2E0_hDtQsLvSDAAnmYTECtlh6I8Hxyhz_y9Mp-OYaT89qZzlFAixSHf_S6IUTI8ckXxoRnZjLVo6ioZCO3DXnuiYYjHj6-XyQmRQcoGqlmwLhLvsubdutpVdsFM26OyUe8BM213CpcpH73fo4BU0MgjYG4p-2emr2JFnlX7D5LOi9oZtt5CAU4bDeeaAqYmz3EiAh904FiqjGIo2Su71cZfyBvhM9BpIGsM8-BjEzNAoAZ4WpvmwZYTb0o-h25wiPs4hSc0BOPGD1H860Gfoz76kOTuq9Ud-CjHG_3aD_LJJXuRQTexsVppkAedyN4rVxwFT2vC7EPzAOCrlnpX_oZXfejLr1XAZoaK4pt0Avb22BTNkc4GeVjaw=w640-h727-no?authuser=0" alt="image"> -->
                                 </div>
                                 <div class="good__info__wrapper">
                                     <div class="good__description__wrapper">
@@ -177,7 +182,8 @@
                         <div class="good__wrapper">
                             <div class="good__wrapper__inner">
                                 <div class="good__image__wrapper">
-                                    <img src="https://lh3.googleusercontent.com/fRhTQqprbflcmHs5syj_YB8CzQFixjSqO2f51ghrAlwsf6CqmmqNwFeuVO3Oa5UyaYyIp9oUJiYoqd8g-NNoUlsWqXu4yZnbI2Y4w2b12CgF7roDt2acc_T7UOErwDMAs6sGAVSJzj5GFNtzxtRO-aRNJuMChw4x9J-uLiGg-kwKKECYt0PofGqdIFHbThXaoaHreWia4WrnHEPLqO5v2-zyfmFZ2WiJFO88dEvdHNHNuw9SV0UXrpspRKPlpbfMmZRs1j5d_eMFH9UXc2x7D5SMFjY8sr8JKL4mR5SOmefzVYNELJC5s7dBbG2s_tST2umfg3XVYrUfGszEBqK9rqFOpagVRo7jZ1WFSGoaKqar4oB6Q02KQZw8Vk5nc4xrKTculmMWscA6wNRddJPhSKC7BN_-uktHnb8gww-hJg-QgCltRBROVSe4c5kLMg1U748bGjiJY9QWye-JKRMOQjW5AOM0Mr1HXlLMOXVnLwZlw-CjwAH_5ebBUzt8H9fYKhCbJbg4TXdVD8JuJZ05-oM-E8eL2l4LJei3mzuSQW8JVeI03snIs_Xb6k-OTxFMbha2xYNioXFNeSBHLR0pG009wStktJa7Z1Kdj5vONEsui1ArQ6JCa1skz2N090DQcx2CrtxULWRC1u-oO3eto3sWkz-rm-rN1-srgR_Vt24rfVuitEubOnIR8_A6q0nqtZSZDLvc1dZyHmYq0DEnMwSPsZ09wg1jM7wZVrbYAsBBuxZQ9c0fKlZkFPHIf95PZeCwR2AvtX5fsrieNf1OljpFzSjEnhRa1A=w640-h800-no?authuser=0" alt="image">
+                                    <img src="img/b4.jpg" alt="img">
+                                    <!-- <img src="https://lh3.googleusercontent.com/fRhTQqprbflcmHs5syj_YB8CzQFixjSqO2f51ghrAlwsf6CqmmqNwFeuVO3Oa5UyaYyIp9oUJiYoqd8g-NNoUlsWqXu4yZnbI2Y4w2b12CgF7roDt2acc_T7UOErwDMAs6sGAVSJzj5GFNtzxtRO-aRNJuMChw4x9J-uLiGg-kwKKECYt0PofGqdIFHbThXaoaHreWia4WrnHEPLqO5v2-zyfmFZ2WiJFO88dEvdHNHNuw9SV0UXrpspRKPlpbfMmZRs1j5d_eMFH9UXc2x7D5SMFjY8sr8JKL4mR5SOmefzVYNELJC5s7dBbG2s_tST2umfg3XVYrUfGszEBqK9rqFOpagVRo7jZ1WFSGoaKqar4oB6Q02KQZw8Vk5nc4xrKTculmMWscA6wNRddJPhSKC7BN_-uktHnb8gww-hJg-QgCltRBROVSe4c5kLMg1U748bGjiJY9QWye-JKRMOQjW5AOM0Mr1HXlLMOXVnLwZlw-CjwAH_5ebBUzt8H9fYKhCbJbg4TXdVD8JuJZ05-oM-E8eL2l4LJei3mzuSQW8JVeI03snIs_Xb6k-OTxFMbha2xYNioXFNeSBHLR0pG009wStktJa7Z1Kdj5vONEsui1ArQ6JCa1skz2N090DQcx2CrtxULWRC1u-oO3eto3sWkz-rm-rN1-srgR_Vt24rfVuitEubOnIR8_A6q0nqtZSZDLvc1dZyHmYq0DEnMwSPsZ09wg1jM7wZVrbYAsBBuxZQ9c0fKlZkFPHIf95PZeCwR2AvtX5fsrieNf1OljpFzSjEnhRa1A=w640-h800-no?authuser=0" alt="image"> -->
                                 </div>
                                 <div class="good__info__wrapper">
                                     <div class="good__description__wrapper">
@@ -192,7 +198,8 @@
                         <div class="good__wrapper">
                             <div class="good__wrapper__inner">
                                 <div class="good__image__wrapper">
-                                    <img src="https://lh3.googleusercontent.com/he_0x8FJ2mj6U6AFf71OqATwfQxxyZo6VhyyoDJmBNFWoFgwloGHklMyJZk6IkDDwxj08ZZO-frIrnJ4mj3HXs94dfYUZL3oi_WQwJusxfQyNRFnND7TMWF6fVbTwM8-SGwGM_Oc-6VjYlTxT1iwelvjq8VTbdogFS7kO3owdC3Eokh30YTnpLRnEjyUU2JoM1nnvRlWYZXlbwsxmZAQf5iCKg7wczrtHD3IUd7pzxDBPmUqCRxdj7nFnDpYixrcCjOhonIZD8n_F9QXNlXG5qLA5qnjXR0O71iBV-bPxWqzv5r1c6VLd5adK_dtn-apgoqn66AEi2VFmq6HT2fj9rIZG0MILlSP1NTkF4n2l7tW35kSUTv1j_VQeTmtxFUy7LKj_6qrKdWqDalZnwce_uwykeiiGnpO6BQxj0MerQ735thv-_XBAK0GkxMuyP-p_SYokfHaEMoqeq6HzFR3AKULuD1GjVuPu48eLkiR4BnxFR-CwqyZnZb_WtCEYYgXNqexeTe7I10MXD7l2B2J1M_tQzIb_p7MT0GVK2dGEIXvwcs06cTGZACZ0s6LTzUMaBRhgOMrFWdZ4-iUs9qNmpGPS_lR_sp2N8coZnRLqboyw9vED03-hHDLPH8IzT8s3Dl4eqCpL9NOCsG4MZXqrA1TRZyvOwU2bNUTm3RMgE3D0GzWq1jBcNpsKJzY6QZg6yQiHlXqloowAZlSClzB9jpU_sE_kns4b6aFEMVHH-uxXZX45lmT2ZWqyO0QhbmqxV4U8PwufqppI-rPT_WH_g_Qo2RcM_euNA=w640-h800-no?authuser=0" alt="image">
+                                    <img src="img/b5.jpg" alt="img">
+                                    <!-- <img src="https://lh3.googleusercontent.com/he_0x8FJ2mj6U6AFf71OqATwfQxxyZo6VhyyoDJmBNFWoFgwloGHklMyJZk6IkDDwxj08ZZO-frIrnJ4mj3HXs94dfYUZL3oi_WQwJusxfQyNRFnND7TMWF6fVbTwM8-SGwGM_Oc-6VjYlTxT1iwelvjq8VTbdogFS7kO3owdC3Eokh30YTnpLRnEjyUU2JoM1nnvRlWYZXlbwsxmZAQf5iCKg7wczrtHD3IUd7pzxDBPmUqCRxdj7nFnDpYixrcCjOhonIZD8n_F9QXNlXG5qLA5qnjXR0O71iBV-bPxWqzv5r1c6VLd5adK_dtn-apgoqn66AEi2VFmq6HT2fj9rIZG0MILlSP1NTkF4n2l7tW35kSUTv1j_VQeTmtxFUy7LKj_6qrKdWqDalZnwce_uwykeiiGnpO6BQxj0MerQ735thv-_XBAK0GkxMuyP-p_SYokfHaEMoqeq6HzFR3AKULuD1GjVuPu48eLkiR4BnxFR-CwqyZnZb_WtCEYYgXNqexeTe7I10MXD7l2B2J1M_tQzIb_p7MT0GVK2dGEIXvwcs06cTGZACZ0s6LTzUMaBRhgOMrFWdZ4-iUs9qNmpGPS_lR_sp2N8coZnRLqboyw9vED03-hHDLPH8IzT8s3Dl4eqCpL9NOCsG4MZXqrA1TRZyvOwU2bNUTm3RMgE3D0GzWq1jBcNpsKJzY6QZg6yQiHlXqloowAZlSClzB9jpU_sE_kns4b6aFEMVHH-uxXZX45lmT2ZWqyO0QhbmqxV4U8PwufqppI-rPT_WH_g_Qo2RcM_euNA=w640-h800-no?authuser=0" alt="image"> -->
                                 </div>
                                 <div class="good__info__wrapper">
                                     <div class="good__description__wrapper">
@@ -207,7 +214,206 @@
                         <div class="good__wrapper">
                             <div class="good__wrapper__inner">
                                 <div class="good__image__wrapper">
-                                    <img src="https://lh3.googleusercontent.com/VHIvWwrvYOhsiClS5rNPzXq5DSK6DzMOBG_bSkVlaqSoYI9IuRWOhxHTJtJ5aMBKsFMDvEBx5xFK9Aqc-ultUNdpiM5sR6b1OgKtp5StYvyxI2gjHzv8ooisxbQ2_so8jhovgWT7pbfJZ03sx95LW5wsr8WXmPCi1OJ6Bl2Hg6EkjxpzbTvgEM2FsGYIBHU-3YeFHVCpBjqhweHXCRNJUzrffn_qSHWxyqE9xRjBqVkEwQl_HQFt2ZNTOlgKFAmtC7U_7ukvVZTtGL3QpsXStN7qLoYCgPwJN0iAxwImjHUnyLfgyQFS4frA8hC9TouQweX7CPyWcS9wg2BqSG9pubx6FmtBQRChUS97lmbSd37WYYeyHGbgS8eO8fRvoqPmQw4Q2Wnod5wPlGe68Ac37mJXBIvoX2GZ8bwprHscgj9517QY_1dgGY0kJd8CQcPu1dEo0JoKi_00iPQhYp1nt5O3caJGDSDjg7a1IjPuYDj-vNcmtxw_u5zIg7LI7vMrjcO4Uhsy3JGsBiA9lD3y9flgW4e7biKkPskW35dyKcWWidYYKWj14A-C1fc_7w2v02oVws99gsET73CE5BhcfOqmtcPXWVMF2uet4R_SI76JYbNp2F8zJe2ULLZnqyHN7K_pyaQ15nkqwpA97KSaRFp2VnYbagC-JweHZMMPYJG8M9QWMez5eE1ylpiKe8HO4_mwWi3fLzLA0Uj56GEOHPPZXPrwcCMXyNuHcHglQ-gFFA0-YtnCu0HmBhoCLACJ6hQD1YtmUV1kG-gLxH43i0TGJ_F8vlLGzw=w640-h772-no?authuser=0" alt="image">
+                                    <img src="img/b6.jpg" alt="img">
+                                    <!-- <img src="https://lh3.googleusercontent.com/VHIvWwrvYOhsiClS5rNPzXq5DSK6DzMOBG_bSkVlaqSoYI9IuRWOhxHTJtJ5aMBKsFMDvEBx5xFK9Aqc-ultUNdpiM5sR6b1OgKtp5StYvyxI2gjHzv8ooisxbQ2_so8jhovgWT7pbfJZ03sx95LW5wsr8WXmPCi1OJ6Bl2Hg6EkjxpzbTvgEM2FsGYIBHU-3YeFHVCpBjqhweHXCRNJUzrffn_qSHWxyqE9xRjBqVkEwQl_HQFt2ZNTOlgKFAmtC7U_7ukvVZTtGL3QpsXStN7qLoYCgPwJN0iAxwImjHUnyLfgyQFS4frA8hC9TouQweX7CPyWcS9wg2BqSG9pubx6FmtBQRChUS97lmbSd37WYYeyHGbgS8eO8fRvoqPmQw4Q2Wnod5wPlGe68Ac37mJXBIvoX2GZ8bwprHscgj9517QY_1dgGY0kJd8CQcPu1dEo0JoKi_00iPQhYp1nt5O3caJGDSDjg7a1IjPuYDj-vNcmtxw_u5zIg7LI7vMrjcO4Uhsy3JGsBiA9lD3y9flgW4e7biKkPskW35dyKcWWidYYKWj14A-C1fc_7w2v02oVws99gsET73CE5BhcfOqmtcPXWVMF2uet4R_SI76JYbNp2F8zJe2ULLZnqyHN7K_pyaQ15nkqwpA97KSaRFp2VnYbagC-JweHZMMPYJG8M9QWMez5eE1ylpiKe8HO4_mwWi3fLzLA0Uj56GEOHPPZXPrwcCMXyNuHcHglQ-gFFA0-YtnCu0HmBhoCLACJ6hQD1YtmUV1kG-gLxH43i0TGJ_F8vlLGzw=w640-h772-no?authuser=0" alt="image"> -->
+                                </div>
+                                <div class="good__info__wrapper">
+                                    <div class="good__description__wrapper">
+                                        <p>Дуже смачний та красивий тропічний букет з кокосом</p>
+                                    </div>
+                                    <div class="good__price__wrapper">
+                                        <p>700 ₴</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="goods__grid">
+                        <div class="good__wrapper">
+                            <div class="good__wrapper__inner">
+                                <div class="good__image__wrapper">
+                                    <img src="img/b1.jpg" alt="img">
+                                    <!-- <img src="https://lh3.googleusercontent.com/3B9u7oyHB1r5laiijEpozNq9LiZUypUt-hYudOCilbzicuHZSUtj26iVxJNY1wjUS9BYz2oxEtewVSWe_fAzzv56ULJrv-2J2cmDbJ5sA3Fo0i229emm9tQgU7utjpl_ouUhXli-ZKKmRoCleqZ4zPZnC5OkiIedDrD4vYFTYXF3zEZCo_GXzF3faxoJ_ptV1MqxCZ-gWV8Zq21gG8zl8q6fz2W5aRN8udjG3e4RIvKGEoUaRBYRj7t_wBqg9qByYIFME0TuvPfKsuQWeGb63_IuCaM7HlnddOjfUtRaZB0gfFo8AkAvmUTRXBC5c_RB2Ty92NOzD6spOrPkXHnKnZ2JCaSsxEHh646hOniGAle7szgD_xMlnO8q9UOXhl9L2izIfT_rR8tHR4ezegKVHMHqQSIsSBWtCkAcmVWt8Zln66WhPI0xvkgJn5pMjemlQTBkPCxF6yvbANXsptV_3nD2EGBwbCmDxcjTgLnE7f2ssHRmQgtYVv09P4igTM0JYh0bhw2IUWs5d9OeHcWOJq5ry4_gt7JlEANcQkRhVxLo9uBJrUbE5Boi0XyotvK47MAcZTM406oYldkVk4P-acbvnUw-ZirlBcxvzpfyvFHc2jK4VTOV0xBdaj8OP-m_UTdTcYPp_P9JqCAaNiuE1NjEJlLXMVUQamGbC3B2ZfBjfSX0oGySTo7QXBeMQkAPgTkHSmb764t5hCXaMiT9Qv9h_fl8lAR7XPKDGL_IkvRmZmZ4rJ6O1cZ7VmMaXzEa6RuLujQOw8n5gLYrjclGQfWAANxpcblSVg=w750-h843-no?authuser=0" alt="image"> -->
+                                </div>
+                                <div class="good__info__wrapper">
+                                    <div class="good__description__wrapper">
+                                        <p>Дуже смачний та красивий тропічний букет з кокосом</p>
+                                    </div>
+                                    <div class="good__price__wrapper">
+                                        <p>9999 ₴</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="good__wrapper">
+                            <div class="good__wrapper__inner">
+                                <div class="good__image__wrapper">
+                                    <img src="img/b2.jpg" alt="img">
+                                    <!-- <img src="https://lh3.googleusercontent.com/x4o-x8BDnDvg2HnyqBudT0H1JSGaoo3GIdZ7iFThyqzLV83bQDu5utPhujWDTjbtwG3q6nlXKrVBo_A5yBejsD4ct1OAmq4cQ_5sXU1zE2A4UU9s3eJxzCaLqX8GbjKN-xqr_ccGkLdMg2Iq9Zhdjko9ay0fQbtR7RxcXGVbaVwTde8emv8aF_XNRonLOw5vh_zWoBwZCCXoRPM1Hv9GjL286MvPVR6lkaQFXuVsIyo71hbVo56YqtsHPySFVBW6cS2Im6FhOhruMjjsbHoK11rCMzTwDXW7CLoahprtoc0Tw1OcQk0UGwUT57G044TansYEbuLTdoity48yfPTBgjCbWo4FWK1GEihv3Z6Bqro8uqXSJcJIFICVO6qid9ZqAbstrRWuqFJKTim_dRep0VWZMDuo4_ZW6l9-oFlBXmsq3Ia_meOZmsw94VbnRNwPv0xAYitwRIy9LEyUvrb51kqnm61DCoPnJpb4Udhoe50ZwowgyYSTjBayD2NGK2kKNteSd3s01THtzXwyeOv473zOqlWYk2vpFWD1UapYnggKKYdxlcfOT3axhQh14MZyountSG_BOAgIaiEMcWln4JdQpU6XhxmJbuhEM27GRWHuW8qDoEO_llfhVmCeXdy2BB2YmzEFULon4Qx5ACsQyihwXWSmFzYoxOti4x_kdsF255adFlDxdQT8RwwMkRZ_Bj6pPJ3801FbsgUj2czpQOKvZdvCXIDdSJWRXDtXye9D8kVO3xdrx6_-q3RDKpemS9Cb8cHN0uui8LVyf2hNoSXUQCVph5JeTA=w640-h728-no?authuser=0" alt="image"> -->
+                                </div>
+                                <div class="good__info__wrapper">
+                                    <div class="good__description__wrapper">
+                                        <p>Дуже смачний та красивий тропічний букет з кокосом</p>
+                                    </div>
+                                    <div class="good__price__wrapper">
+                                        <p>550 ₴</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="good__wrapper">
+                            <div class="good__wrapper__inner">
+                                <div class="good__image__wrapper">
+                                    <img src="img/b3.jpg" alt="img">
+                                    <!-- <img src="https://lh3.googleusercontent.com/_3XhMl2KAvUPFVORxAzAHSFrcqSrS-4vVUnixvoyO6Erc9AA-SqthlKsRpyHID44fxWjnW6MmKGWi0tRTd0K3v0jGS_m7w513LS1Scw-eRn1U4pNLUgLNbCrHO9zzRgcNCR1F98T6dC9-IdzfqLPeUvXQIqrHAVPWZgfkR7Hq_ILhscIjKgOWQ1U2bsWCmSA6a3Ptt6Pt28NkbjLE-bkIK9Oup9HttDbpORN7a9p2sdU1_5zCC-PLP1i64BwHt-Rjq8iR5CzmK9ze9UHK1jHqRQHBDyCnCtiIWrjLCftrCPPR1JKRyEaLDowpt9sQzFZYu46Bve4WW50L69Rqz9gdMoDG3VkplhMmgb5zSGoQ3L3MbefZmssgIxirudqaYF_XcmW3EbOFdHdQpvKVv-ddVpoOFTj3sU7V9t0hGYtrE2E0_hDtQsLvSDAAnmYTECtlh6I8Hxyhz_y9Mp-OYaT89qZzlFAixSHf_S6IUTI8ckXxoRnZjLVo6ioZCO3DXnuiYYjHj6-XyQmRQcoGqlmwLhLvsubdutpVdsFM26OyUe8BM213CpcpH73fo4BU0MgjYG4p-2emr2JFnlX7D5LOi9oZtt5CAU4bDeeaAqYmz3EiAh904FiqjGIo2Su71cZfyBvhM9BpIGsM8-BjEzNAoAZ4WpvmwZYTb0o-h25wiPs4hSc0BOPGD1H860Gfoz76kOTuq9Ud-CjHG_3aD_LJJXuRQTexsVppkAedyN4rVxwFT2vC7EPzAOCrlnpX_oZXfejLr1XAZoaK4pt0Avb22BTNkc4GeVjaw=w640-h727-no?authuser=0" alt="image"> -->
+                                </div>
+                                <div class="good__info__wrapper">
+                                    <div class="good__description__wrapper">
+                                        <p>Дуже смачний та красивий тропічний букет з кокосом</p>
+                                    </div>
+                                    <div class="good__price__wrapper">
+                                        <p>900 ₴</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="good__wrapper">
+                            <div class="good__wrapper__inner">
+                                <div class="good__image__wrapper">
+                                    <img src="img/b4.jpg" alt="img">
+                                    <!-- <img src="https://lh3.googleusercontent.com/fRhTQqprbflcmHs5syj_YB8CzQFixjSqO2f51ghrAlwsf6CqmmqNwFeuVO3Oa5UyaYyIp9oUJiYoqd8g-NNoUlsWqXu4yZnbI2Y4w2b12CgF7roDt2acc_T7UOErwDMAs6sGAVSJzj5GFNtzxtRO-aRNJuMChw4x9J-uLiGg-kwKKECYt0PofGqdIFHbThXaoaHreWia4WrnHEPLqO5v2-zyfmFZ2WiJFO88dEvdHNHNuw9SV0UXrpspRKPlpbfMmZRs1j5d_eMFH9UXc2x7D5SMFjY8sr8JKL4mR5SOmefzVYNELJC5s7dBbG2s_tST2umfg3XVYrUfGszEBqK9rqFOpagVRo7jZ1WFSGoaKqar4oB6Q02KQZw8Vk5nc4xrKTculmMWscA6wNRddJPhSKC7BN_-uktHnb8gww-hJg-QgCltRBROVSe4c5kLMg1U748bGjiJY9QWye-JKRMOQjW5AOM0Mr1HXlLMOXVnLwZlw-CjwAH_5ebBUzt8H9fYKhCbJbg4TXdVD8JuJZ05-oM-E8eL2l4LJei3mzuSQW8JVeI03snIs_Xb6k-OTxFMbha2xYNioXFNeSBHLR0pG009wStktJa7Z1Kdj5vONEsui1ArQ6JCa1skz2N090DQcx2CrtxULWRC1u-oO3eto3sWkz-rm-rN1-srgR_Vt24rfVuitEubOnIR8_A6q0nqtZSZDLvc1dZyHmYq0DEnMwSPsZ09wg1jM7wZVrbYAsBBuxZQ9c0fKlZkFPHIf95PZeCwR2AvtX5fsrieNf1OljpFzSjEnhRa1A=w640-h800-no?authuser=0" alt="image"> -->
+                                </div>
+                                <div class="good__info__wrapper">
+                                    <div class="good__description__wrapper">
+                                        <p>Дуже смачний та красивий тропічний букет з кокосом</p>
+                                    </div>
+                                    <div class="good__price__wrapper">
+                                        <p>550 ₴</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="good__wrapper">
+                            <div class="good__wrapper__inner">
+                                <div class="good__image__wrapper">
+                                    <img src="img/b5.jpg" alt="img">
+                                    <!-- <img src="https://lh3.googleusercontent.com/he_0x8FJ2mj6U6AFf71OqATwfQxxyZo6VhyyoDJmBNFWoFgwloGHklMyJZk6IkDDwxj08ZZO-frIrnJ4mj3HXs94dfYUZL3oi_WQwJusxfQyNRFnND7TMWF6fVbTwM8-SGwGM_Oc-6VjYlTxT1iwelvjq8VTbdogFS7kO3owdC3Eokh30YTnpLRnEjyUU2JoM1nnvRlWYZXlbwsxmZAQf5iCKg7wczrtHD3IUd7pzxDBPmUqCRxdj7nFnDpYixrcCjOhonIZD8n_F9QXNlXG5qLA5qnjXR0O71iBV-bPxWqzv5r1c6VLd5adK_dtn-apgoqn66AEi2VFmq6HT2fj9rIZG0MILlSP1NTkF4n2l7tW35kSUTv1j_VQeTmtxFUy7LKj_6qrKdWqDalZnwce_uwykeiiGnpO6BQxj0MerQ735thv-_XBAK0GkxMuyP-p_SYokfHaEMoqeq6HzFR3AKULuD1GjVuPu48eLkiR4BnxFR-CwqyZnZb_WtCEYYgXNqexeTe7I10MXD7l2B2J1M_tQzIb_p7MT0GVK2dGEIXvwcs06cTGZACZ0s6LTzUMaBRhgOMrFWdZ4-iUs9qNmpGPS_lR_sp2N8coZnRLqboyw9vED03-hHDLPH8IzT8s3Dl4eqCpL9NOCsG4MZXqrA1TRZyvOwU2bNUTm3RMgE3D0GzWq1jBcNpsKJzY6QZg6yQiHlXqloowAZlSClzB9jpU_sE_kns4b6aFEMVHH-uxXZX45lmT2ZWqyO0QhbmqxV4U8PwufqppI-rPT_WH_g_Qo2RcM_euNA=w640-h800-no?authuser=0" alt="image"> -->
+                                </div>
+                                <div class="good__info__wrapper">
+                                    <div class="good__description__wrapper">
+                                        <p>Дуже смачний та красивий тропічний букет з кокосом</p>
+                                    </div>
+                                    <div class="good__price__wrapper">
+                                        <p>750 ₴</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="good__wrapper">
+                            <div class="good__wrapper__inner">
+                                <div class="good__image__wrapper">
+                                    <img src="img/b6.jpg" alt="img">
+                                    <!-- <img src="https://lh3.googleusercontent.com/VHIvWwrvYOhsiClS5rNPzXq5DSK6DzMOBG_bSkVlaqSoYI9IuRWOhxHTJtJ5aMBKsFMDvEBx5xFK9Aqc-ultUNdpiM5sR6b1OgKtp5StYvyxI2gjHzv8ooisxbQ2_so8jhovgWT7pbfJZ03sx95LW5wsr8WXmPCi1OJ6Bl2Hg6EkjxpzbTvgEM2FsGYIBHU-3YeFHVCpBjqhweHXCRNJUzrffn_qSHWxyqE9xRjBqVkEwQl_HQFt2ZNTOlgKFAmtC7U_7ukvVZTtGL3QpsXStN7qLoYCgPwJN0iAxwImjHUnyLfgyQFS4frA8hC9TouQweX7CPyWcS9wg2BqSG9pubx6FmtBQRChUS97lmbSd37WYYeyHGbgS8eO8fRvoqPmQw4Q2Wnod5wPlGe68Ac37mJXBIvoX2GZ8bwprHscgj9517QY_1dgGY0kJd8CQcPu1dEo0JoKi_00iPQhYp1nt5O3caJGDSDjg7a1IjPuYDj-vNcmtxw_u5zIg7LI7vMrjcO4Uhsy3JGsBiA9lD3y9flgW4e7biKkPskW35dyKcWWidYYKWj14A-C1fc_7w2v02oVws99gsET73CE5BhcfOqmtcPXWVMF2uet4R_SI76JYbNp2F8zJe2ULLZnqyHN7K_pyaQ15nkqwpA97KSaRFp2VnYbagC-JweHZMMPYJG8M9QWMez5eE1ylpiKe8HO4_mwWi3fLzLA0Uj56GEOHPPZXPrwcCMXyNuHcHglQ-gFFA0-YtnCu0HmBhoCLACJ6hQD1YtmUV1kG-gLxH43i0TGJ_F8vlLGzw=w640-h772-no?authuser=0" alt="image"> -->
+                                </div>
+                                <div class="good__info__wrapper">
+                                    <div class="good__description__wrapper">
+                                        <p>Дуже смачний та красивий тропічний букет з кокосом</p>
+                                    </div>
+                                    <div class="good__price__wrapper">
+                                        <p>700 ₴</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="goods__grid">
+                        <div class="good__wrapper">
+                            <div class="good__wrapper__inner">
+                                <div class="good__image__wrapper">
+                                    <img src="img/b1.jpg" alt="img">
+                                    <!-- <img src="https://lh3.googleusercontent.com/3B9u7oyHB1r5laiijEpozNq9LiZUypUt-hYudOCilbzicuHZSUtj26iVxJNY1wjUS9BYz2oxEtewVSWe_fAzzv56ULJrv-2J2cmDbJ5sA3Fo0i229emm9tQgU7utjpl_ouUhXli-ZKKmRoCleqZ4zPZnC5OkiIedDrD4vYFTYXF3zEZCo_GXzF3faxoJ_ptV1MqxCZ-gWV8Zq21gG8zl8q6fz2W5aRN8udjG3e4RIvKGEoUaRBYRj7t_wBqg9qByYIFME0TuvPfKsuQWeGb63_IuCaM7HlnddOjfUtRaZB0gfFo8AkAvmUTRXBC5c_RB2Ty92NOzD6spOrPkXHnKnZ2JCaSsxEHh646hOniGAle7szgD_xMlnO8q9UOXhl9L2izIfT_rR8tHR4ezegKVHMHqQSIsSBWtCkAcmVWt8Zln66WhPI0xvkgJn5pMjemlQTBkPCxF6yvbANXsptV_3nD2EGBwbCmDxcjTgLnE7f2ssHRmQgtYVv09P4igTM0JYh0bhw2IUWs5d9OeHcWOJq5ry4_gt7JlEANcQkRhVxLo9uBJrUbE5Boi0XyotvK47MAcZTM406oYldkVk4P-acbvnUw-ZirlBcxvzpfyvFHc2jK4VTOV0xBdaj8OP-m_UTdTcYPp_P9JqCAaNiuE1NjEJlLXMVUQamGbC3B2ZfBjfSX0oGySTo7QXBeMQkAPgTkHSmb764t5hCXaMiT9Qv9h_fl8lAR7XPKDGL_IkvRmZmZ4rJ6O1cZ7VmMaXzEa6RuLujQOw8n5gLYrjclGQfWAANxpcblSVg=w750-h843-no?authuser=0" alt="image"> -->
+                                </div>
+                                <div class="good__info__wrapper">
+                                    <div class="good__description__wrapper">
+                                        <p>Дуже смачний та красивий тропічний букет з кокосом</p>
+                                    </div>
+                                    <div class="good__price__wrapper">
+                                        <p>9999 ₴</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="good__wrapper">
+                            <div class="good__wrapper__inner">
+                                <div class="good__image__wrapper">
+                                    <img src="img/b2.jpg" alt="img">
+                                    <!-- <img src="https://lh3.googleusercontent.com/x4o-x8BDnDvg2HnyqBudT0H1JSGaoo3GIdZ7iFThyqzLV83bQDu5utPhujWDTjbtwG3q6nlXKrVBo_A5yBejsD4ct1OAmq4cQ_5sXU1zE2A4UU9s3eJxzCaLqX8GbjKN-xqr_ccGkLdMg2Iq9Zhdjko9ay0fQbtR7RxcXGVbaVwTde8emv8aF_XNRonLOw5vh_zWoBwZCCXoRPM1Hv9GjL286MvPVR6lkaQFXuVsIyo71hbVo56YqtsHPySFVBW6cS2Im6FhOhruMjjsbHoK11rCMzTwDXW7CLoahprtoc0Tw1OcQk0UGwUT57G044TansYEbuLTdoity48yfPTBgjCbWo4FWK1GEihv3Z6Bqro8uqXSJcJIFICVO6qid9ZqAbstrRWuqFJKTim_dRep0VWZMDuo4_ZW6l9-oFlBXmsq3Ia_meOZmsw94VbnRNwPv0xAYitwRIy9LEyUvrb51kqnm61DCoPnJpb4Udhoe50ZwowgyYSTjBayD2NGK2kKNteSd3s01THtzXwyeOv473zOqlWYk2vpFWD1UapYnggKKYdxlcfOT3axhQh14MZyountSG_BOAgIaiEMcWln4JdQpU6XhxmJbuhEM27GRWHuW8qDoEO_llfhVmCeXdy2BB2YmzEFULon4Qx5ACsQyihwXWSmFzYoxOti4x_kdsF255adFlDxdQT8RwwMkRZ_Bj6pPJ3801FbsgUj2czpQOKvZdvCXIDdSJWRXDtXye9D8kVO3xdrx6_-q3RDKpemS9Cb8cHN0uui8LVyf2hNoSXUQCVph5JeTA=w640-h728-no?authuser=0" alt="image"> -->
+                                </div>
+                                <div class="good__info__wrapper">
+                                    <div class="good__description__wrapper">
+                                        <p>Дуже смачний та красивий тропічний букет з кокосом</p>
+                                    </div>
+                                    <div class="good__price__wrapper">
+                                        <p>550 ₴</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="good__wrapper">
+                            <div class="good__wrapper__inner">
+                                <div class="good__image__wrapper">
+                                    <img src="img/b3.jpg" alt="img">
+                                    <!-- <img src="https://lh3.googleusercontent.com/_3XhMl2KAvUPFVORxAzAHSFrcqSrS-4vVUnixvoyO6Erc9AA-SqthlKsRpyHID44fxWjnW6MmKGWi0tRTd0K3v0jGS_m7w513LS1Scw-eRn1U4pNLUgLNbCrHO9zzRgcNCR1F98T6dC9-IdzfqLPeUvXQIqrHAVPWZgfkR7Hq_ILhscIjKgOWQ1U2bsWCmSA6a3Ptt6Pt28NkbjLE-bkIK9Oup9HttDbpORN7a9p2sdU1_5zCC-PLP1i64BwHt-Rjq8iR5CzmK9ze9UHK1jHqRQHBDyCnCtiIWrjLCftrCPPR1JKRyEaLDowpt9sQzFZYu46Bve4WW50L69Rqz9gdMoDG3VkplhMmgb5zSGoQ3L3MbefZmssgIxirudqaYF_XcmW3EbOFdHdQpvKVv-ddVpoOFTj3sU7V9t0hGYtrE2E0_hDtQsLvSDAAnmYTECtlh6I8Hxyhz_y9Mp-OYaT89qZzlFAixSHf_S6IUTI8ckXxoRnZjLVo6ioZCO3DXnuiYYjHj6-XyQmRQcoGqlmwLhLvsubdutpVdsFM26OyUe8BM213CpcpH73fo4BU0MgjYG4p-2emr2JFnlX7D5LOi9oZtt5CAU4bDeeaAqYmz3EiAh904FiqjGIo2Su71cZfyBvhM9BpIGsM8-BjEzNAoAZ4WpvmwZYTb0o-h25wiPs4hSc0BOPGD1H860Gfoz76kOTuq9Ud-CjHG_3aD_LJJXuRQTexsVppkAedyN4rVxwFT2vC7EPzAOCrlnpX_oZXfejLr1XAZoaK4pt0Avb22BTNkc4GeVjaw=w640-h727-no?authuser=0" alt="image"> -->
+                                </div>
+                                <div class="good__info__wrapper">
+                                    <div class="good__description__wrapper">
+                                        <p>Дуже смачний та красивий тропічний букет з кокосом</p>
+                                    </div>
+                                    <div class="good__price__wrapper">
+                                        <p>900 ₴</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="good__wrapper">
+                            <div class="good__wrapper__inner">
+                                <div class="good__image__wrapper">
+                                    <img src="img/b4.jpg" alt="img">
+                                    <!-- <img src="https://lh3.googleusercontent.com/fRhTQqprbflcmHs5syj_YB8CzQFixjSqO2f51ghrAlwsf6CqmmqNwFeuVO3Oa5UyaYyIp9oUJiYoqd8g-NNoUlsWqXu4yZnbI2Y4w2b12CgF7roDt2acc_T7UOErwDMAs6sGAVSJzj5GFNtzxtRO-aRNJuMChw4x9J-uLiGg-kwKKECYt0PofGqdIFHbThXaoaHreWia4WrnHEPLqO5v2-zyfmFZ2WiJFO88dEvdHNHNuw9SV0UXrpspRKPlpbfMmZRs1j5d_eMFH9UXc2x7D5SMFjY8sr8JKL4mR5SOmefzVYNELJC5s7dBbG2s_tST2umfg3XVYrUfGszEBqK9rqFOpagVRo7jZ1WFSGoaKqar4oB6Q02KQZw8Vk5nc4xrKTculmMWscA6wNRddJPhSKC7BN_-uktHnb8gww-hJg-QgCltRBROVSe4c5kLMg1U748bGjiJY9QWye-JKRMOQjW5AOM0Mr1HXlLMOXVnLwZlw-CjwAH_5ebBUzt8H9fYKhCbJbg4TXdVD8JuJZ05-oM-E8eL2l4LJei3mzuSQW8JVeI03snIs_Xb6k-OTxFMbha2xYNioXFNeSBHLR0pG009wStktJa7Z1Kdj5vONEsui1ArQ6JCa1skz2N090DQcx2CrtxULWRC1u-oO3eto3sWkz-rm-rN1-srgR_Vt24rfVuitEubOnIR8_A6q0nqtZSZDLvc1dZyHmYq0DEnMwSPsZ09wg1jM7wZVrbYAsBBuxZQ9c0fKlZkFPHIf95PZeCwR2AvtX5fsrieNf1OljpFzSjEnhRa1A=w640-h800-no?authuser=0" alt="image"> -->
+                                </div>
+                                <div class="good__info__wrapper">
+                                    <div class="good__description__wrapper">
+                                        <p>Дуже смачний та красивий тропічний букет з кокосом</p>
+                                    </div>
+                                    <div class="good__price__wrapper">
+                                        <p>550 ₴</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="good__wrapper">
+                            <div class="good__wrapper__inner">
+                                <div class="good__image__wrapper">
+                                    <img src="img/b5.jpg" alt="img">
+                                    <!-- <img src="https://lh3.googleusercontent.com/he_0x8FJ2mj6U6AFf71OqATwfQxxyZo6VhyyoDJmBNFWoFgwloGHklMyJZk6IkDDwxj08ZZO-frIrnJ4mj3HXs94dfYUZL3oi_WQwJusxfQyNRFnND7TMWF6fVbTwM8-SGwGM_Oc-6VjYlTxT1iwelvjq8VTbdogFS7kO3owdC3Eokh30YTnpLRnEjyUU2JoM1nnvRlWYZXlbwsxmZAQf5iCKg7wczrtHD3IUd7pzxDBPmUqCRxdj7nFnDpYixrcCjOhonIZD8n_F9QXNlXG5qLA5qnjXR0O71iBV-bPxWqzv5r1c6VLd5adK_dtn-apgoqn66AEi2VFmq6HT2fj9rIZG0MILlSP1NTkF4n2l7tW35kSUTv1j_VQeTmtxFUy7LKj_6qrKdWqDalZnwce_uwykeiiGnpO6BQxj0MerQ735thv-_XBAK0GkxMuyP-p_SYokfHaEMoqeq6HzFR3AKULuD1GjVuPu48eLkiR4BnxFR-CwqyZnZb_WtCEYYgXNqexeTe7I10MXD7l2B2J1M_tQzIb_p7MT0GVK2dGEIXvwcs06cTGZACZ0s6LTzUMaBRhgOMrFWdZ4-iUs9qNmpGPS_lR_sp2N8coZnRLqboyw9vED03-hHDLPH8IzT8s3Dl4eqCpL9NOCsG4MZXqrA1TRZyvOwU2bNUTm3RMgE3D0GzWq1jBcNpsKJzY6QZg6yQiHlXqloowAZlSClzB9jpU_sE_kns4b6aFEMVHH-uxXZX45lmT2ZWqyO0QhbmqxV4U8PwufqppI-rPT_WH_g_Qo2RcM_euNA=w640-h800-no?authuser=0" alt="image"> -->
+                                </div>
+                                <div class="good__info__wrapper">
+                                    <div class="good__description__wrapper">
+                                        <p>Дуже смачний та красивий тропічний букет з кокосом</p>
+                                    </div>
+                                    <div class="good__price__wrapper">
+                                        <p>750 ₴</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="good__wrapper">
+                            <div class="good__wrapper__inner">
+                                <div class="good__image__wrapper">
+                                    <img src="img/b6.jpg" alt="img">
+                                    <!-- <img src="https://lh3.googleusercontent.com/VHIvWwrvYOhsiClS5rNPzXq5DSK6DzMOBG_bSkVlaqSoYI9IuRWOhxHTJtJ5aMBKsFMDvEBx5xFK9Aqc-ultUNdpiM5sR6b1OgKtp5StYvyxI2gjHzv8ooisxbQ2_so8jhovgWT7pbfJZ03sx95LW5wsr8WXmPCi1OJ6Bl2Hg6EkjxpzbTvgEM2FsGYIBHU-3YeFHVCpBjqhweHXCRNJUzrffn_qSHWxyqE9xRjBqVkEwQl_HQFt2ZNTOlgKFAmtC7U_7ukvVZTtGL3QpsXStN7qLoYCgPwJN0iAxwImjHUnyLfgyQFS4frA8hC9TouQweX7CPyWcS9wg2BqSG9pubx6FmtBQRChUS97lmbSd37WYYeyHGbgS8eO8fRvoqPmQw4Q2Wnod5wPlGe68Ac37mJXBIvoX2GZ8bwprHscgj9517QY_1dgGY0kJd8CQcPu1dEo0JoKi_00iPQhYp1nt5O3caJGDSDjg7a1IjPuYDj-vNcmtxw_u5zIg7LI7vMrjcO4Uhsy3JGsBiA9lD3y9flgW4e7biKkPskW35dyKcWWidYYKWj14A-C1fc_7w2v02oVws99gsET73CE5BhcfOqmtcPXWVMF2uet4R_SI76JYbNp2F8zJe2ULLZnqyHN7K_pyaQ15nkqwpA97KSaRFp2VnYbagC-JweHZMMPYJG8M9QWMez5eE1ylpiKe8HO4_mwWi3fLzLA0Uj56GEOHPPZXPrwcCMXyNuHcHglQ-gFFA0-YtnCu0HmBhoCLACJ6hQD1YtmUV1kG-gLxH43i0TGJ_F8vlLGzw=w640-h772-no?authuser=0" alt="image"> -->
                                 </div>
                                 <div class="good__info__wrapper">
                                     <div class="good__description__wrapper">
@@ -267,6 +473,7 @@
         </div>
     </footer>
 
-    <script src="slider.js"></script>
+    <script src="scripts/slider.js"></script>
+    <script src="scripts/pagination.js"></script>
 </body>
 </html>
