@@ -88,8 +88,6 @@ body {
 header {
     height: 230px;
     padding-top: 45px;
-    /* background-color: #5DA28B; */
-    /* background-color: #09c1ac; */
     background: radial-gradient(circle, rgba(9,193,172,1) 0%, rgba(41,152,139,1) 100%);
 }
 
@@ -108,7 +106,7 @@ header {
 
 #logo__image > img {
     border-radius: 20%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 #logo__title {
@@ -159,22 +157,33 @@ header {
   height: 80px;
 }
 
-#nav__wrapper > nav > span {
+#nav__wrapper > nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#nav__wrapper > nav > ul > li {
+  display: inline-block;
+}
+
+#nav__wrapper > nav > ul > li > a {
+  text-decoration: none;
+  color: white;
   padding: 10px;
 }
 
-#nav__wrapper > nav > span:hover {
+#nav__wrapper > nav > ul > li > a:hover {
   background: radial-gradient(circle, rgba(9,193,172,1) 0%, rgba(41,152,139,1) 100%);
   border-radius: 10px;
 }
 
 #menu__nav {
   background-color: #5D74A2;
-}
-
-/* Slider */
-#menu__slider {
-  height: 400px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* Main content */
@@ -257,6 +266,11 @@ header {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
   background-color: #3f4c66;
   border-radius: 10px;
+}
+
+.good__wrapper:hover {
+  background-color: #56678a;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.35), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
 }
 
 .good__wrapper__inner {

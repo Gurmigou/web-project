@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans&family=Secular+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slider.css">
+    <script src="https://kit.fontawesome.com/e990452c07.js" crossorigin="anonymous"></script>
     <title>Fruit bouquet shop</title>
 </head>
 <body>
@@ -36,16 +38,40 @@
     <div id="menu__nav">
         <div id="nav__wrapper" class="general__content">
             <nav>
-                <span>Головна</span>
-                <span>Каталог</span>
-                <span>Доставка та оплата</span>
-                <span>Ціни</span>
-                <span>Контакти</span>
+                <ul>
+                    <li>
+                        <a href="#">Головна</a>
+                    </li>
+                    <li>
+                        <a href="#">Каталог</a>
+                    </li>
+                    <li>
+                        <a href="#">Доставка та оплата</a>
+                    </li>
+                    <li>
+                        <a href="#">Ціни</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакти</a>
+                    </li>
+                </ul>
             </nav>
         </div>
     </div>
     <div id="menu__slider">
-
+        <div class="general__content">
+            <div id="carousel__slide__wrapper">
+                <i class="fa-solid fa-arrow-left" id="prev__btn"></i>
+                <i class="fa-solid fa-arrow-right" id="next__btn"></i>
+                <div id="carousel__slide">
+                    <img src="img/slide_3.jpg" id="last__clone" alt="slider">
+                    <img src="img/slide_1.jpg" alt="slider">
+                    <img src="img/slide_2.jpg" alt="slider">
+                    <img src="img/slide_3.jpg" alt="slider">
+                    <img src="img/slide_1.jpg" id="first__clone" alt="slider">
+                </div>
+            </div>
+        </div>
     </div>
     <div id="main__content__path">
         <div class="general__content">
@@ -240,5 +266,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="slider.js"></script>
 </body>
 </html>

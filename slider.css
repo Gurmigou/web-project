@@ -1,0 +1,42 @@
+#menu__slider {
+  height: 400px;
+  background-color: #3f4c66;
+  overflow: hidden;
+}
+
+#carousel__slide__wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+#carousel__slide {
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+#carousel__slide > img {
+  height: 400px;
+  width: 100%;
+}
+
+#prev__btn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  left: 5%;
+  font-size: 30px;
+  color: white;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+#next__btn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  right: 5%;
+  font-size: 30px;
+  color: white;
+  opacity: 0.7;
+  cursor: pointer;
+}
