@@ -33,8 +33,6 @@ const findIndexByPredicate = (list, predicate) => {
 }
 
 const pageClickHandler = (event) => {
-    console.log("click")
-
     let prevPageIndex = curPageIndex;
     let newPageIndex = findIndexByPredicate(paginationItemList, (item) => item === event.target);
     console.log(newPageIndex);

@@ -15,33 +15,11 @@
     <link rel="stylesheet" href="styles/slider.css">
     <link rel="stylesheet" href="styles/pagination.css">
     <link rel="stylesheet" href="styles/feedback.css">
+    <link rel="stylesheet" href="styles/content-list.css">
     <script src="https://kit.fontawesome.com/e990452c07.js" crossorigin="anonymous"></script>
     <title>Fruit bouquet shop</title>
 </head>
 <body>
-    <div id="feedback__wrapper">
-        <div id="feedback__content">
-            <div id="feedback__close__btn">&#9587;</div>
-            <p id="feedback__title">Залашити відгук</p>
-            <form id="feedback__form" method="get">
-                <label for="feedback__form__name__input">Введіть Ваше ім'я *</label>
-                <input type="text" id="feedback__form__name__input" placeholder="Іван Іванов" required>
-    
-                <label for="feedback__form__phone__input">Введіть номер телефону *</label>
-                <input type="tel" id="feedback__form__phone__input" placeholder="0661112345" required>
-    
-                <label for="feedback__form__email__input">Введіть E-mail *</label>
-                <input type="email" id="feedback__form__email__input" placeholder="ivan.ivanov@gmail.com" required>
-    
-                <label for="feedback__form__message__input">Залишити коментар</label>
-                <textarea id="feedback__form__message__input" placeholder="Ваша продукція мені..."></textarea>
-    
-                <input type="button" id="feedback__form__submit__btn" value="Надіслати">
-            </form>
-        </div>
-    </div>
-
-
     <header>
         <div id="header__content" class="general__content">
             <div id="logo">
@@ -122,7 +100,7 @@
                     <div id="goods__types__list__wrapper">
                         <ul id="goods__types__list">
                             <li>
-                                <p>
+                                <p id="fruits">
                                     Фруктові букети
                                 </p>
                                 <ul>
@@ -132,7 +110,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <p>
+                                <p id="sweets">
                                     Солодкі букети
                                 </p>
                                 <ul>
@@ -142,7 +120,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <p>
+                                <p id="meet">
                                     М'ясні букети
                                 </p>
                                 <ul>
@@ -482,7 +460,31 @@
         </div>
     </footer>
 
+    <div id="feedback__wrapper">
+        <div id="feedback__content">
+            <div id="feedback__close__btn">&#9587;</div>
+            <p id="feedback__title">Залашити відгук</p>
+            <form id="feedback__form" method="get">
+                <label for="feedback__form__name__input">Введіть Ваше ім'я *</label>
+                <input type="text" id="feedback__form__name__input" placeholder="Іван Іванов" required>
+    
+                <label for="feedback__form__phone__input">Введіть номер телефону *</label>
+                <input type="tel" id="feedback__form__phone__input" placeholder="+380 (66)-111-22-33" required>
+    
+                <label for="feedback__form__email__input">Введіть E-mail *</label>
+                <input type="email" id="feedback__form__email__input" placeholder="ivan.ivanov@gmail.com" required>
+    
+                <label for="feedback__form__message__input">Залишити коментар</label>
+                <textarea id="feedback__form__message__input" placeholder="Ваша продукція мені..."></textarea>
+    
+                <input type="button" id="feedback__form__submit__btn" value="Надіслати">
+            </form>
+        </div>
+    </div>
+
     <script src="scripts/slider.js"></script>
     <script src="scripts/pagination.js"></script>
+    <script src="scripts/feedback.js"></script>
+    <script src="scripts/content-list.js"></script>
 </body>
 </html>
