@@ -1,0 +1,72 @@
+#main__content__inner__aside__left {
+    height: 634px;
+}
+
+#delivery__note {
+    margin: 10px;
+    background-color: red;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+#delivery__note > p {
+    padding: 5px;
+    text-align: justify;
+    font-weight: bold;
+}
+
+#delivery__payment__wrapper {
+    background-color: #5D74A2;
+    margin: 0 5px 0 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+#delivery > h2, #payment > h2 {
+    font-size: 26px;
+}
+
+#delivery, #payment {
+    padding-top: 15px;
+    text-align: center;
+}
+
+#delivery__grid, #payment__grid {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 15px;
+}
+
+.delivery__item, .payment__item {
+    height: 250px;
+    margin: 10px;
+    background-color: #3f4c66;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: all 0.2s 0s ease-in-out;
+}
+
+.delivery__item:hover, .payment__item:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.35), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
+    background-color: #5D74A2;
+}
+
+.delivery__item > img, .payment__item > img {
+    margin: 15px;
+    height: 190px;
+    width: 85%;
+    border-radius: 10px;
+}
+
+.delivery__item > p, .payment__item > p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
