@@ -4,6 +4,16 @@ body {
     font-size: 16px;
     line-height: 22px;
     color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+
+    background-image: url(../img/background_main.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .general__content {
@@ -168,6 +178,35 @@ header {
   border-radius: 10px;
 }
 
+#prices__document {
+  height: 150px;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column  ;
+  justify-content: center;
+  align-items: center;
+}
+
+#prices__document:hover {
+  color: #74fbe1;
+}
+
+#prices__document > img {
+  background-color: #5D74A2;
+  transition: height 0.2s 0s ease-in-out;
+  height: 110px;
+  cursor: pointer;
+}
+
+#prices__document > img:hover {
+  height: 150px;
+}
+
+#prices__document > p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
 #main__content__inner__aside__right {
   width: 80%;
   height: 100%;
@@ -288,6 +327,9 @@ footer {
   display: flex;  
   justify-content: center;
   align-items: center;
+
+  position: relative;
+  bottom: 0;
 }
 
 #footer__content {

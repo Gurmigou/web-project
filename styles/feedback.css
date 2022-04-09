@@ -38,6 +38,7 @@
     text-align: center;
     line-height: 30px;
     border-radius: 7px;
+    cursor: pointer;
 }
 
 #feedback__close__btn-btn::selection {
@@ -99,6 +100,10 @@
     outline: none;
     padding: 5px;
     border: 2px solid rgba(41,152,139,1);
+}
+
+#feedback__form__submit__btn {
+    cursor: pointer;
 }
 
 #feedback__form #feedback__form__submit__btn {

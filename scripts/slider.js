@@ -10,22 +10,31 @@ let counter = 1;
 const size = carouselImages[0].clientWidth;
 
 carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+// performNextClick();
 
-// Button listeners
-nextBtn.addEventListener('click', () => {
+function performNextClick() {
     if (counter < carouselImages.length - 1) {
         carouselSlide.style.transition = 'transform 1s ease-in-out';
         counter++;
         carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)'; 
     }
-});
+}
 
-prevBtn.addEventListener('click', () => {
+function performPrevClick() {
     if (counter > 0) {
         carouselSlide.style.transition = 'transform 1s ease-in-out';
         counter--;
         carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
     }  
+}
+
+// Button listeners
+nextBtn.addEventListener('click', () => {
+    performNextClick();
+});
+
+prevBtn.addEventListener('click', () => {
+    performPrevClick();
 });
 
 carouselSlide.addEventListener('transitionend', () => {
@@ -40,3 +49,5 @@ carouselSlide.addEventListener('transitionend', () => {
       carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
   }
 });
+
+// setInterval(performNextClick, 5000);

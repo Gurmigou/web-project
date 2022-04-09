@@ -2,6 +2,8 @@ let pageList;
 let curPageIndex;
 let paginationItemList = [];
 
+const mainContent = document.getElementById('main__content');
+
 const showPage = (page) => {
     page.style.display = 'grid';
 }
@@ -48,6 +50,10 @@ const pageClickHandler = (event) => {
     showPage(pageList[newPageIndex]);
 
     curPageIndex = newPageIndex;
+
+    mainContent.scrollIntoView({
+        behavior: 'smooth'
+    });
 }
 
 window.addEventListener('load', initGoods);

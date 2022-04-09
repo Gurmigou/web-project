@@ -1,15 +1,23 @@
-const allSectionItems = document.querySelectorAll('#goods__types__list > li > ul > li');
-const sections = document.querySelectorAll('#goods__types__list > li');
+const sections = document.querySelectorAll('#goods__types__list > li > p');
+const sectionElements = document.querySelectorAll('#goods__types__list > li > ul');
 
-function sectionOnclick(section, event) {
-    allSectionItems.forEach(child => child.style.display = 'none');
+function sectionOnclick(section) {
+    const isOpened = section.classList.contains('open');
+    sectionElements.forEach(item => item.style.maxHeight = '0px');
+    sections.forEach(item => item.classList.remove('open'));
 
-    if (section.id !== event.target.id) {
-        const element = document.getElementById(event.target.id);
-        Array.from(element.parentElement.children[1].children).forEach(child => child.style.display = 'list-item');
-    }
+    if (!isOpened) {
+        const listNameP = document.getElementById(section.id);
+        listNameP.parentElement.children[1].style.maxHeight = '96px';
+        section.classList.add('open');
+    } 
 }
 
-sections.forEach(section => {
-    section.addEventListener('click', (event) => sectionOnclick(section, event));
-})
+sections.forEach(section => section.addEventListener('click', () => sectionOnclick(section)));
+
+document.querySelectorAll('#goods__types__list > li > ul > li')
+        .forEach(item => item.addEventListener('click',  () => {
+            document.getElementById('main__content').scrollIntoView({
+                    behavior: 'smooth'
+            });
+}));

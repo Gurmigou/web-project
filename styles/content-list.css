@@ -27,8 +27,15 @@
 
 #goods__types__list > li > ul {
   list-style-type: square;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s 0s ease-in-out;
 }
 
 #goods__types__list > li > ul > li {
-  display: none;
+  cursor: pointer;
+}
+
+#goods__types__list > li > ul > li:hover {
+  color: #83f1db;
 }
