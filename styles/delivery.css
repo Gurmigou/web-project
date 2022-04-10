@@ -24,6 +24,7 @@
 
 #delivery > h2, #payment > h2 {
     font-size: 26px;
+    color: #74fbe1;
 }
 
 #delivery, #payment {
@@ -69,4 +70,20 @@
     margin-bottom: 10px;
     font-size: 18px;
     font-weight: bold;
+}
+
+#about__delivery {
+    margin: 20px 5px 0 5px;
+    background-color: #5D74A2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+#about__delivery > p {
+    padding: 10px;
+    text-align: justify;
+}
+
+#about__delivery > p > strong {
+    color: #74fbe1;
 }

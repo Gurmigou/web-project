@@ -15,8 +15,9 @@
     <link rel="stylesheet" href="styles/slider.css">
     <link rel="stylesheet" href="styles/pagination.css">
     <link rel="stylesheet" href="styles/feedback.css">
-    <link rel="stylesheet" href="styles/delivery.css">
+    <link rel="stylesheet" href="styles/contacts.css">
     <script src="https://kit.fontawesome.com/e990452c07.js" crossorigin="anonymous"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQ4ghAnxCFjWqtHxiZ_07DcE_ljwE3mik&callback=initMap"></script>
     <title>Fruit bouquet shop</title>
 </head>
 <body>
@@ -86,7 +87,7 @@
                     <div>
                         <a>Головна</a>
                         /
-                        <a>Доставка та оплата</a>
+                        <a>Контакти</a>
                     </div>
                 </div>
             </div>
@@ -102,52 +103,64 @@
                         </div>
                     </div>
                     <div id="main__content__inner__aside__right">
-                        <div id="delivery__payment__wrapper">
-                            <div id="delivery">
-                                <h2>Доставка</h2>
-                                <div id="delivery__grid">
-                                    <div class="delivery__item">
-                                        <img src="img/delivery_np.png" alt="post">
-                                        <p>Нова Поштка</p>
+                        <div id="contacts__wrapper">
+                            <div class="contact">
+                                <h2>Зателефонуйте нам по телефону</h2>
+                                <p>
+                                    +380 66-111-11-11</br>
+                                    +380 93-234-56-78           
+                                </p>
+                            </div>
+                            <div class="contact">
+                                <h2>Напишіть нам електронний лист</h2>
+                                <p>
+                                    bouquet.order@gmail.com
+                                </p>
+                            </div>
+                            <div class="contact">
+                                <h2>Ми у соціальних мережах</h2>
+                                <ul id="social__media__list">
+                                    <li>
+                                        <a href="https://www.facebook.com/">
+                                            <i class="fab fa-facebook-square"></i>
+                                            Facebook
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/">
+                                            <i class="fab fa-instagram"></i>
+                                            Instagram
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.youtube.com/">
+                                            <i class="fab fa-youtube"></i>
+                                            Youtube
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="contact">
+                                <h2>Наші офіси</h2>
+                                <div id="maps__grid">
+                                    <div class="map__item">
+                                        <iframe class="office__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2544.1114071678912!2d30.472161826284633!3d50.383121711348814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c8e4302f8173%3A0xed290a5326a634e3!2z0KTQsNC60YPQu9GM0YLQtdGCINC60L7QvNC_J9GO0YLQtdGA0L3QuNGFINC90LDRg9C6INGC0LAg0LrRltCx0LXRgNC90LXRgtC40LrQuCDQmtC40ZfQstGB0YzQutC-0LPQviDQvdCw0YbRltC-0L3QsNC70YzQvdC-0LPQviDRg9C90ZbQstC10YDRgdC40YLQtdGC0YMg0ZbQvNC10L3RliDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQsA!5e0!3m2!1suk!2sua!4v1590315947848!5m2!1suk!2sua"
+                                            width="100%" height="85%" style="border:0;" allowfullscreen="" loading="lazy"
+                                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        <p>
+                                            <strong>Офіс 1</strong>  Проспект Академіка Глушкова 4д, Київ
+                                        </p>
                                     </div>
-                                    <div class="delivery__item">
-                                        <img src="img/delivery_urkpost.jpg" alt="post">
-                                        <p>Укрпошта</p>
-                                    </div>
-                                    <div class="delivery__item">
-                                        <img src="img/delivery_justin.png" alt="post">
-                                        <p>Justin</p>
+                                    <div class="map__item">
+                                        <iframe class="office__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.950911897848!2d30.508917851039033!3d50.442014995753425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef9c7e43aad%3A0x2ba7235902913d52!2z0JrRgNCw0YHQvdGL0Lkg0LrQvtGA0L_Rg9GBINCa0LjQtdCy0YHQutC-0LPQviDQvdCw0YbQuNC-0L3QsNC70YzQvdC-0LPQviDRg9C90LjQstC10YDRgdC40YLQtdGC0LA!5e0!3m2!1sru!2sua!4v1648827986781!5m2!1sru!2sua"
+                                        width="100%" height="85%" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        <p>
+                                            <strong>Офіс 2</strong> Вулиця Володимирська 60, Київ
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-    
-                            <div id="payment">
-                                <h2>Оплата</h2>
-                                <div id="payment__grid">
-                                    <div class="payment__item">
-                                        <img src="img/payment_visa_mastercard.png" alt="payment">
-                                        <p>Visa або Mastercard</p>
-                                    </div>
-                                    <div class="payment__item">
-                                        <img src="img/payment_privat24.png" alt="payment">
-                                        <p>Privat24</p>
-                                    </div>
-                                    <div class="payment__item">
-                                        <img src="img/payment_paypal.png" alt="payment">
-                                        <p>PayPal</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="about__delivery">
-                            <p>
-                                <strong>Шановний клієнт!</strong>
-                                Через ситуацію в країні є значні складнощі з обробкою та доставкою замовлень.
-                                Можливість доставки пов'язана не лише з графіком відділень перевізників в тому чи іншому регіоні, а й з можливістю відвантаження товарів зі складів магазину, які розташовані в різних локаціях.
-                                Наші співробітники, також, не завжди мають можливість безпечно дістатися робочих місць і повноцінно працювати.
-                                Зі свого боку, ми робимо все можливе аби ви могли отримати замовлення якомога швидше, та наразі відвантаження товарів зі складу може займати до декількох днів. Просимо з розумінням поставитися до ситуації та зачекати інформацію про відвантаження в повідомленні від перевізника.
-                            </p>
                         </div>
 
                         <div id="about__goods">

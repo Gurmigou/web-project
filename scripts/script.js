@@ -1,4 +1,4 @@
-const links = document.getQuerySelectorAll('#nav__links > li > a');
+const links = document.querySelectorAll('#nav__links > li > a');
 
 console.log(document.querySelector('header'))
 

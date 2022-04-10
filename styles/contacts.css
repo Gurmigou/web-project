@@ -1,0 +1,92 @@
+#main__content__inner__aside__left {
+    height: 855.8px;
+}
+
+#delivery__note {
+    margin: 10px;
+    background-color: red;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+#delivery__note > p {
+    padding: 5px;
+    text-align: justify;
+    font-weight: bold;
+}
+
+#contacts__wrapper {
+    background-color: #5D74A2;
+    margin: 0 5px 0 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+.contact {
+    padding-top: 15px;
+}
+
+.contact > h2 {
+    font-size: 26px;
+    text-align: center;
+    color: #74fbe1;
+}
+
+.contact > p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 20px;
+    line-height: 2em;
+}
+
+#social__media__list {
+    list-style-type: none;
+}
+
+#social__media__list > li > a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.fa-facebook-square {
+    color: #acabe8;
+}
+
+.fa-instagram {
+    color: #e8a8ac;
+}
+
+.fa-youtube {
+    color: #ea4e58;
+}
+
+#maps__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 15px;
+    margin-top: 15px;
+}
+
+.map__item {
+    margin: 15px;
+    border-radius: 10px;
+    height: 400px;
+    width: 100%;
+}
+
+.map__item > p {
+    width: 92%;
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 5px;
+    text-align: center;
+}
+
+.office__map {
+    width: 92%;
+    border-radius: 10px;
+}
+

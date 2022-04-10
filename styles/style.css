@@ -120,11 +120,14 @@ header {
   text-decoration: none;
   color: white;
   padding: 10px;
+
+  border-radius: 10px;
+  transition: all 0.3s 0s ease-in-out;
 }
 
 #nav__wrapper > nav > ul > li > a:hover {
-  background: radial-gradient(circle, rgba(9,193,172,1) 0%, rgba(41,152,139,1) 100%);
-  border-radius: 10px;
+  background-color: #0EBAA6;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
 }
 
 #menu__nav {
