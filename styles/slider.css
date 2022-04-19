@@ -1,42 +1,80 @@
-#menu__slider {
+.slider .slider__container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   height: 400px;
-  background-color: #3f4c66;
-  overflow: hidden;
+  z-index: 3;
 }
 
-#carousel__slide__wrapper {
-  overflow: hidden;
-  position: relative;
-}
-
-#carousel__slide {
-  display: flex;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
-}
-
-#carousel__slide > img {
+.slider {
   height: 400px;
   width: 100%;
 }
 
-#prev__btn {
+#slides {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  background: url("img/slide_1.jpg") no-repeat center / cover;
+  opacity: 0;
+  transition: opacity 1s 0s ease-in-out;
+}
+
+#prev, #next {
   position: absolute;
   top: 50%;
   z-index: 10;
-  left: 5%;
   font-size: 30px;
   color: white;
-  opacity: 0.7;
+  opacity: 0.85;
   cursor: pointer;
 }
 
-#next__btn {
+#prev {
+  right: 430px;
+}
+
+#next {
+  left: 430px;
+}
+
+#controls {
+  display: flex;
+  gap: 10px;
   position: absolute;
-  top: 50%;
-  z-index: 10;
-  right: 5%;
-  font-size: 30px;
-  color: white;
-  opacity: 0.7;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: none;
+}
+
+#controls .control {
+  width: 14px;
+  height: 14px;
+  border-radius: 14px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  transition: all 0.3s;
+  transition-property: border-left-color, border-top-color, border-right-color, border-bottom-color;
   cursor: pointer;
+}
+
+#controls .control:hover {
+  border: 2px solid #0EBAA6;
+}
+
+#controls .selected_control {
+  width: 14px;
+  height: 14px;
+  border-radius: 16px;
+  background-color: #0EBAA6;
+  border: 2px solid #0EBAA6;
+  transition: all 1s;
+  transition-property: background-color, border-left-color, border-top-color, border-right-color, border-bottom-color;
 }

@@ -135,6 +135,14 @@ header {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
+.nav__separator {
+  display: block;
+  width: 2px;
+  height: 26px;
+  content: '';
+  background: #ffffff;
+}
+
 /* Main content */
 #main__content__path {
   background-color: #5D74A2;
@@ -357,12 +365,14 @@ footer {
   list-style-type: none;
 }
 
-#footer__nav > ul > li {
+#footer__nav > ul > li > a {
+  text-decoration: none;
+  color: white;
   transition: color 0.1s 0s ease-in-out;
   margin-bottom: 10px;
 }
 
-#footer__nav > ul > li:hover {
+#footer__nav > ul > li > a:hover {
   color: #74fbe1;
   cursor: pointer;
 }

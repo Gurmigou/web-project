@@ -1,53 +1,109 @@
-const carouselSlide = document.getElementById('carousel__slide');
-const carouselImages = document.querySelectorAll('#carousel__slide img');
+let imgLinks = [
+    "img/slide_1.jpg",
+    "img/slide_2.jpg",
+    "img/slide_3.jpg",
+    "img/slide_4.jpg",
+    "img/slide_5.jpg",
+]
 
-// Buttons
-const prevBtn = document.getElementById("prev__btn");
-const nextBtn = document.getElementById("next__btn");
+let slidesArr = [];
+let slidesDots = [];
 
-// Counter
-let counter = 1;
-const size = carouselImages[0].clientWidth;
+let currentImageNum = 0;
 
-carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-// performNextClick();
+let prevButton = document.getElementById("prev");
+let nextButton = document.getElementById("next");
 
-function performNextClick() {
-    if (counter < carouselImages.length - 1) {
-        carouselSlide.style.transition = 'transform 1s ease-in-out';
-        counter++;
-        carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)'; 
+let interval = window.setInterval(nextClick, 4000);
+
+function calculatePrevImageNum() {
+    if(currentImageNum == 0) {
+        return imgLinks.length - 1;
     }
+    return currentImageNum - 1;
 }
 
-function performPrevClick() {
-    if (counter > 0) {
-        carouselSlide.style.transition = 'transform 1s ease-in-out';
-        counter--;
-        carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-    }  
+function calculateNextImageNum() {
+    return (currentImageNum + 1) % imgLinks.length;
 }
 
-// Button listeners
-nextBtn.addEventListener('click', () => {
-    performNextClick();
-});
+function setBackground(imgView, imgLink) {
+    imgView.style.backgroundImage = "url('" + imgLink + "')";
+    imgView.style.backgroundRepeat = "no-repeat";
+    imgView.style.backgroundPosition = "center";
+    imgView.style.backgroundSize = "cover";
+}
 
-prevBtn.addEventListener('click', () => {
-    performPrevClick();
-});
+function nextClick() {
+    resetTimer();
 
-carouselSlide.addEventListener('transitionend', () => {
-    if (carouselImages[counter].id === 'last__clone') {
-        carouselSlide.style.transition = 'none';
-        counter = carouselImages.length - 2;
-        carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+    slidesArr[currentImageNum].style.opacity = '';
+    unselectDot(slidesDots[currentImageNum]);
+    currentImageNum = calculateNextImageNum();
+    slidesArr[currentImageNum].style.opacity = 1;
+    selectDot(slidesDots[currentImageNum]);
+}
+
+function prevClick() {
+    resetTimer();
+
+    slidesArr[currentImageNum].style.opacity = '';
+    unselectDot(slidesDots[currentImageNum]);
+    currentImageNum = calculatePrevImageNum();
+    slidesArr[currentImageNum].style.opacity = 1;
+    selectDot(slidesDots[currentImageNum]);
+}
+
+function dotClick(dotNum) {
+    resetTimer();
+
+    slidesArr[currentImageNum].style.opacity = '';
+    unselectDot(slidesDots[currentImageNum]);
+    currentImageNum = dotNum;
+    slidesArr[currentImageNum].style.opacity = 1;
+    selectDot(slidesDots[currentImageNum]);
+}
+
+function resetTimer() {
+    window.clearInterval(interval);
+    interval = window.setInterval(nextClick, 4000);
+}
+
+function selectDot(dot) {
+    dot.classList.add("selected_control");
+    dot.classList.remove("control");
+}
+
+function unselectDot(dot) {
+    dot.classList.remove("selected_control");
+    dot.classList.add("control");
+}
+
+window.addEventListener('load', () => {
+    let slides = document.getElementById('slides');
+    let controls = document.getElementById('controls');
+    for(let link of imgLinks) {
+        let slide = document.createElement("div");
+        slide.classList.add("slide");
+        setBackground(slide, link);
+        slides.appendChild(slide);
+        slidesArr.push(slide);
+
+        let dot = document.createElement("div");
+        dot.classList.add("control");
+        slidesDots.push(dot);
+        controls.appendChild(dot);
     }
-    if (carouselImages[counter].id === 'first__clone') {
-      carouselSlide.style.transition = 'none';
-      counter = carouselImages.length - counter;
-      carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-  }
-});
+    slidesArr[currentImageNum].style.opacity = 1;
+    slidesDots[currentImageNum].classList.remove("control");
+    slidesDots[currentImageNum].classList.add("selected_control");
 
-// setInterval(performNextClick, 5000);
+    for(let i = 0; i < slidesDots.length; ++i) {
+        slidesDots[i].addEventListener('click', () => {
+            dotClick(i);
+        })
+    }
+
+    nextButton.onclick = nextClick;
+    prevButton.onclick = prevClick;
+});

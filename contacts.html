@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://static.vecteezy.com/system/resources/thumbnails/003/705/785/small_2x/basket-with-fruits-isolated-with-icon-illustration-free-vector.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
@@ -49,15 +50,19 @@
                         <li>
                             <a href="index.html">Головна</a>
                         </li>
+                        <li class="nav__separator"></li>
                         <li>
                             <a href="index.html">Каталог</a>
                         </li>
+                        <li class="nav__separator"></li>
                         <li>
                             <a href="deliveryAndPayments.html">Доставка та оплата</a>
                         </li>
+                        <li class="nav__separator"></li>
                         <li>
                             <a href="#">Ціни</a>
                         </li>
+                        <li class="nav__separator"></li>
                         <li>
                             <a href="contacts.html">Контакти</a>
                         </li>
@@ -65,20 +70,13 @@
                 </nav>
             </div>
         </div>
-        <div id="menu__slider">
-            <div class="general__content">
-                <div id="carousel__slide__wrapper">
-                    <i class="fa-solid fa-arrow-left" id="prev__btn"></i>
-                    <i class="fa-solid fa-arrow-right" id="next__btn"></i>
-                    <div id="carousel__slide">
-                        <img src="img/slide_3.jpg" id="last__clone" alt="slider">
-                        <img src="img/slide_1.jpg" alt="slider">
-                        <img src="img/slide_2.jpg" alt="slider">
-                        <img src="img/slide_3.jpg" alt="slider">
-                        <img src="img/slide_1.jpg" id="first__clone" alt="slider">
-                    </div>
-                </div>
+        <div class="slider">
+            <div class="slider__container">
+                <i class="fa-solid fa-arrow-left arrow prev" id="prev"></i>
+                <i class="fa-solid fa-arrow-right arrow next" id="next"></i>
+                <div id="controls"></div>
             </div>
+            <div id="slides"></div>
             <script src="scripts/slider.js"></script>
         </div>
         <div id="main__content__path">
@@ -98,7 +96,7 @@
                     <div id="main__content__inner__aside__left">
                         <div id="delivery__note">
                             <p>
-                                У зв'язку з війную, будь ласка, уточніть перед замовленням букету можливість його доставки у ваш регіон.
+                                У зв'язку з війною, будь ласка, уточніть перед замовленням букету можливість його доставки у ваш регіон.
                             </p>
                         </div>
                     </div>
@@ -192,11 +190,21 @@
                 </div>
                 <div id="footer__nav">
                     <ul>
-                        <li>Головна</li>
-                        <li>Каталог</li>
-                        <li>Доставка та оплата</li>
-                        <li>Ціни</li>
-                        <li>Контакти</li>
+                        <li>
+                            <a href="index.html">Головна</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Каталог</a>
+                        </li>
+                        <li>
+                            <a href="deliveryAndPayments.html">Доставка та оплата</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Ціни</a>
+                        </li>
+                        <li>
+                            <a href="contacts.html">Контакти</a>
+                        </li>
                     </ul>
                 </div>
                 <div id="footer__copyright">
