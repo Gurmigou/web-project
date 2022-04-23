@@ -1,0 +1,30 @@
+@media (max-width: 1015px) {
+    #delivery__grid, #payment__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #main__content {
+        height: 2200px;
+    }
+}
+
+@media (max-width: 700px) {
+    #delivery__grid, #payment__grid {
+        grid-template-columns: repeat(1, 60%);
+        justify-content: center;
+    }
+
+    #main__content {
+        height: 2900px;
+    }
+}
+
+@media (max-width: 500px) {
+    #delivery__grid, #payment__grid {
+        grid-template-columns: repeat(1, 100%);
+    }
+
+    #main__content {
+        height: 3800px;
+    }
+}
