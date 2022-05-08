@@ -3,12 +3,16 @@ const feedbackWrapper = document.getElementById("feedback__wrapper");
 const feedbackCloseBtn = document.getElementById("feedback__close__btn");
 const feebackFormSubmitBtn = document.getElementById("feedback__form__submit__btn");
 
+const feedbackSuccess = document.getElementById('feedback__success');
+
 feedbackBtn.addEventListener('click', () => {
+    feedbackSuccess.style.display = 'none';
     feedbackWrapper.style.display = 'block';
 })
 
 feedback__close__btn.addEventListener('click', () => {
     feedbackWrapper.style.display = 'none';
+    feedbackSuccess.style.display = 'none';
 })
 
 function validateEmail(email) {
@@ -21,8 +25,9 @@ function validateUkainePhoneNumber(phoneNumber) {
     return regexUkainePhoneNumber.test(String(phoneNumber).toLowerCase());
 }
 
-function clearFeedbackAndClose() {
-    feedbackWrapper.style.display = 'none';
+function clearFieldsAndShowFeedbackSuccess() {
+    // feedbackWrapper.style.display = 'none';
+    feedbackSuccess.style.display = 'block';
 
     document.getElementById('feedback__form__name__input').value = '';
     document.getElementById('feedback__form__email__input').value = '';
@@ -36,24 +41,15 @@ feebackFormSubmitBtn.addEventListener('click', () => {
     const email = document.getElementById('feedback__form__email__input').value;
     const message = document.getElementById('feedback__form__message__input').value;
 
-    console.log(name);
-    console.log(email);
-    console.log(phoneNumber);
-    console.log(message);
-
     if (name === '') {
         alert('Введіть ім\'я');
         return;
     }
 
-    console.log(phoneNumber === '');
-
     if (phoneNumber === '') {
         alert('Введіть номер телефона');
         return;
     }
-
-    console.log(validateUkainePhoneNumber(phoneNumber));
 
     if (!validateUkainePhoneNumber(phoneNumber)) {
         alert('Введіть коректний номер телефона');
@@ -70,11 +66,5 @@ feebackFormSubmitBtn.addEventListener('click', () => {
         return;
     }
 
-    if (message === '') {
-        alert('Залиште коментар');
-        return;
-    }
-
-    confirm('Ваш відгук було надіслано');
-    clearFeedbackAndClose();
+    clearFieldsAndShowFeedbackSuccess();
 })
